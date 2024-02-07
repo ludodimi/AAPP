@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titolo della tua pagina</title>
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
    <body>
     <nav class="navbar">
@@ -50,44 +53,117 @@
         <button class="prev" onclick="moveSlide(-1)">↑</button>
         <button class="next" onclick="moveSlide(1)">↓</button>
     </div>
-     <footer class="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h4>Contatti</h4>
-                    <p>Indirizzo: Via del Corso, 123 - Roma</p>
-                    <p>Email: info@example.com</p>
-                    <p>Telefono: 0123456789</p>
-                </div>
-                <div class="footer-column">
-                    <h4>Link Utili</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Chi siamo</a></li>
-                        <li><a href="#">Servizi</a></li>
-                        <li><a href="#">Contatti</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Seguici</h4>
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
+    <footer class="text-center text-lg-start bg-dark" style="color:#ffffff">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset" aria-label="Collegamento Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset" aria-label="Collegamento Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset" aria-label="Collegamento Google">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset" aria-label="Collegamento Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset" aria-label="Collegamento Linkedin">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset" aria-label="Collegamento Github">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="fw-bold mb-4" style="font-family: 'Urbanist', sans-serif; font-size: 22pt;">
+                  Lodilo
+                </h6>
+                <p>
+                  Grazie per aver visitato il nostro sito di ecommerce.
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Prodotti
+                </h6>
+                <p>
+                  <a href="#to3" class="text-reset">I più venduti</a>
+                </p>
+                <p>
+                  <a href="#ap" class="text-reset">Altri prodotti</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Link
+                </h6>
+                <p>
+                  <a href="chisiamo.html" class="text-reset">Chi siamo</a>
+                </p>
+                <p>
+                  <a href="carrello.html" class="text-reset">Ordini</a>
+                </p>
+                <p>
+                  <a href="#sign" class="text-reset">Registrati</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contatti</h6>
+                <p><i class="fas fa-home me-3"></i> Galliate (NO), Via 25 Aprile</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  ecommerceLodilo@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> +39 3315403707</p>
+              </div>
+              <!-- Grid column -->
             </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold" href="https://ecommercelodilo.netlify.app/">ecommerceLodilo.com</a>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <p>&copy; 2024 Il Tuo Sito. Tutti i diritti riservati.</p>
-        </div>
-    </div>
-</footer>
-
+        <!-- Copyright -->
+      </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
