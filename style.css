@@ -64,10 +64,10 @@ body {
     transition: all 0.3s ease-in-out;
 }
 .slider-container {
-    position: relative;
+    position: sticky;
     width: 100%;
-    height: 700px;
-    overflow: hidden;
+    height: 600px;
+    
 }
 
 .slider {
@@ -78,9 +78,9 @@ body {
 
 .slide {
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-size: cover;
-    position: fixed;
+    position: relative;
 }
 
 .slide-text {
@@ -114,8 +114,10 @@ body {
     right: 10px;
 }
 footer{
-    position: relative;
+    position: fixed;
     width: 100%;
+    height: 50%;
+    bottom: 0;
 }
 
 
