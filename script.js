@@ -1,29 +1,59 @@
-let slideIndex = 1;
+document.addEventListener("DOMContentLoaded", function(){
+    setTimeout(function() {
+        document.querySelector(".slide").classList.add("active");
+    }, 500)
+});
 
-function showSlides() {
-    const slides = document.querySelectorAll('.slide');
-    const slideTexts = document.querySelectorAll('.slide-text');
+function nextSlide() {
+    let currSlide = document.querySelector(".slide.active"),
+        nextSlide = currSlide.nextElementSibling;
 
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
+    currSlide.classList.remove("active");
+    if(nextSlide) {
+        nextSlide.classList.add("active");
+    } else {
+        document.querySelectorAll(".slide")[0].classList.add("active");
     }
-    if (slideIndex < 1) {
-        slideIndex = slides.length;
-    }
-
-    slides.forEach((slide, index) => {
-        if (index === slideIndex - 1) {
-            slide.style.transform = `translateY(-${index * 100}%)`;
-            slideTexts[index].style.display = 'block';
-        } else {
-            slideTexts[index].style.display = 'none';
-        }
-    });
 }
 
-function moveSlide(n) {
-    slideIndex += n;
-    showSlides();
+function previousSlide() {
+    let currSlide = document.querySelector(".slide.active"),
+        prevSlide = currSlide.previousElementSibling,
+        slideCount = document.querySelectorAll(".slide").length;
+
+    currSlide.classList.remove("active");
+    if(prevSlide) {
+        prevSlide.classList.add("active");
+    } else {
+        document.querySelectorAll(".slide")[slideCount - 1].classList.add("active");
+    }
+}
+document.documentElement.lang = "ru"
+document.documentElement.classList.add("page")
+document.body.classList.add("page__body")
+
+const slider = document.querySelector(".slider")
+const curtain = slider.querySelector(".slider__curtain")
+let sliderStyles = getComputedStyle(slider)
+let curtainPlaceStart
+let clientX
+
+window.addEventListener("pointerup", stopTheCurtainShifting)
+curtain.addEventListener("pointerdown", startTheCurtainShifting)
+
+function startTheCurtainShifting (event) {
+	curtainPlaceStart = +(sliderStyles.getPropertyValue("--curtain-place"))
+	clientX = event.clientX
+	window.addEventListener("pointermove", shiftТheСurtain)
 }
 
-showSlides();
+function shiftТheСurtain (event) {
+	let deltaX = event.clientX - clientX
+	let cursorPlace = curtainPlaceStart + deltaX / slider.clientWidth
+	let curtainPlace = Math.min(Math.max(cursorPlace, 0), 1)
+	slider.style.setProperty("--curtain-place", `${curtainPlace}`)
+}
+
+function stopTheCurtainShifting () {
+	window.removeEventListener("pointermove", shiftТheСurtain)
+}

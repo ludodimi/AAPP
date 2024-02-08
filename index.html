@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titolo della tua pagina</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -32,139 +32,292 @@
             </div>
         </div>
     </nav>
-      <div class="slider-container">
-        <div class="slider">
-            <div class="slide" style="background-image: url('https://wallup.net/wp-content/uploads/2017/11/22/317870-photography-building-architecture-monochrome.jpg');">
-                <div class="slide-text">Il mio approccio è simile a quello di un sarto che crea un vestito su misura per il suo cliente. </div>
-            </div>
-            <div class="slide" style="background-image: url('https://geometra24.it/wp-content/uploads/2017/11/architettura-fotografia-1.jpg');">
-                <div class="slide-text">Testo Slide 2</div>
-            </div>
-            <div class="slide" style="background-image: url('https://www.pixtury.com/photos/22D00A0C22-1044299184591ED20A8DA4A/0.jpg');">
-                <div class="slide-text">Testo Slide 3</div>
-            </div>
-            <div class="slide" style="background-image: url('https://img5.juzaphoto.com/001/shared_files/uploads/3582443_l.jpg');">
-                <div class="slide-text">Testo Slide 4</div>
-            </div>
-            <div class="slide" style="background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/10/Cool-architecture-wallpaper.jpg');">
-                <div class="slide-text">Testo Slide 5</div>
-            </div>
+    <div class="slider">
+			<div class="slide slide-1">
+				<div class="slide-bg"></div>
+				<div class="slide-content">
+					<div class="slide-image">
+						<img src="https://newsdeeply.imgix.net/20170713072433/IS09AX2F9.jpg">
+					</div>
+					<div class="slide-text">
+						<p>	
+							They can hold their breath for five hours underwater.
+						</p>
+						
+					</div>
+				</div>
+			</div>
+			<div class="slide slide-2">
+				<div class="slide-bg"></div>
+				<div class="slide-content">
+					<div class="slide-image">
+						<img src="https://img-aws.ehowcdn.com/877x500p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/ecddf7a133be423a89184f4675fe8a58">
+					</div>
+					<div class="slide-text">
+						<p>	
+							Foxes eat just about anything, including berries, worms, spiders and small animals such as mice and birds.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide slide-3">
+				<div class="slide-bg"></div>
+				<div class="slide-content">
+					<div class="slide-image">
+						<img src="http://www.wallpapers13.com/wp-content/uploads/2016/02/Bald-Eagle-blue-sky-spread-wings-sharp-claws-Hd-wallpaper-915x515.jpg">
+					</div>
+					<div class="slide-text">
+						<p>	
+							The largest known kill by an eagle was a dulker deer weighing 37 kg - which was 7-8 times the weigth of the Martial Eagle that killed it.
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="slider-controls">
+			<button type="button" class="btn-slide-previous" onclick="previousSlide()">&#10094</button>
+			<button type="button" class="btn-slide-next" onclick="nextSlide()">&#10095</button>
+		</div>
+
+    <div>Progetti</div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
         </div>
-        <button class="prev" onclick="moveSlide(-1)">↑</button>
-        <button class="next" onclick="moveSlide(1)">↓</button>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-    <footer class="text-center text-lg-start bg-dark" style="color:#ffffff">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          <!-- Left -->
-          <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-          </div>
-          <!-- Left -->
-      
-          <!-- Right -->
-          <div>
-            <a href="" class="me-4 text-reset" aria-label="Collegamento Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="" class="me-4 text-reset" aria-label="Collegamento Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="" class="me-4 text-reset" aria-label="Collegamento Google">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 text-reset" aria-label="Collegamento Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset" aria-label="Collegamento Linkedin">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset" aria-label="Collegamento Github">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-          <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
-      
-        <!-- Section: Links  -->
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="fw-bold mb-4" style="font-family: 'Bebas Neue', sans-serif; font-size: 22pt; color:red;">
-                  Arianna Polla
-                </h6>
-                <p>
-                  Grazie per aver visitato il nostro sito di ecommerce.
-                </p>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Prodotti
-                </h6>
-                <p>
-                  <a href="#to3" class="text-reset">I più venduti</a>
-                </p>
-                <p>
-                  <a href="#ap" class="text-reset">Altri prodotti</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Link
-                </h6>
-                <p>
-                  <a href="chisiamo.html" class="text-reset">Chi siamo</a>
-                </p>
-                <p>
-                  <a href="carrello.html" class="text-reset">Ordini</a>
-                </p>
-                <p>
-                  <a href="#sign" class="text-reset">Registrati</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Contatti</h6>
-                <p><i class="fas fa-home me-3"></i> Galliate (NO), Via 25 Aprile</p>
-                <p>
-                  <i class="fas fa-envelope me-3"></i>
-                  ecommerceLodilo@gmail.com
-                </p>
-                <p><i class="fas fa-phone me-3"></i> +39 3315403707</p>
-              </div>
-              <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
-          </div>
-        </section>
-        <!-- Section: Links  -->
-      
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2023 Copyright:
-          <a class="text-reset fw-bold" href="https://ecommercelodilo.netlify.app/">ecommerceLodilo.com</a>
+
+    <div style="margin-top: 60px;">Progetti</div>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="..." class="img-fluid rounded-start" alt="...">
         </div>
-        <!-- Copyright -->
-      </footer>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main-content">
+      <section class="proof page__centerer">
+        <div class="proof__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sunt velit fuga voluptatum veritatis. Eligendi, adipisci omnis, ex impedit praesentium quisquam sint voluptatum delectus quis sed eaque? Quia eaque ea dolorum quasi sint dolores. Dolorem natus ab quidem dicta vero ipsum, odit officiis corporis praesentium sit quaerat eaque blanditiis, repudiandae distinctio modi similique fugiat architecto soluta tenetur consectetur nobis quisquam. Omnis iste incidunt praesentium cumque consequuntur provident, ratione excepturi ipsa illum sequi, qui totam exercitationem eos. Quibusdam repudiandae sapiente illum commodi nihil nam veritatis, esse labore? Veniam nulla laborum, natus at illo praesentium quibusdam totam consectetur omnis necessitatibus asperiores temporibus voluptates itaque in est quasi maxime quae perferendis voluptatibus ex aperiam laboriosam dolorem. Doloribus ea a sunt aut rem ullam, minima ab praesentium impedit architecto omnis assumenda exercitationem aspernatur eaque voluptas nisi dolores facilis eligendi temporibus cumque dolorem modi? Doloribus esse dolor laborum vero iusto! Ut reprehenderit dolores dolorum aspernatur fugiat aperiam exercitationem repellendus, adipisci veniam vel unde nostrum nihil labore veritatis eligendi explicabo. Vel modi maiores neque eaque fuga. Ex perferendis doloremque numquam natus nisi asperiores mollitia nemo rerum pariatur, vero perspiciatis tenetur eius voluptate maiores, voluptas neque quidem harum! Veniam, iusto? Culpa tenetur suscipit cumque laborum ipsa? Adipisci.
+        </div>
+        <figure class="proof__compare compare">
+          <figcaption class="compare__description page__hidden">Кот Борис до и после 2 месяцев питания кормом Cat Energy Slim.</figcaption>
+          <div class="compare__wrapper slider" style="--curtain-place: 0.5;">
+            <picture>
+              <source
+                type="image/avif"
+                media="(min-width: 768px)"
+                srcset="
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-fat-tablet@1x.avif 1x,
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-fat-tablet@2x.avif 2x"
+                width="560"
+                height="512"
+              >
+              <source
+                type="image/avif"
+                srcset="
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-fat-mobile@1x.avif 1x,
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-fat-mobile@2x.avif 2x"
+                width="280"
+                height="256"
+              >
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-fat-tablet@1x.webp 1x,
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-fat-tablet@2x.webp 2x"
+                width="560"
+                height="512"
+              >
+              <source
+                type="image/webp"
+                srcset="
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-fat-mobile@1x.webp 1x,
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-fat-mobile@2x.webp 2x"
+                width="280"
+                height="256"
+              >
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-fat-tablet@1x.png 1x,
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-fat-tablet@2x.png 2x"
+                width="560"
+                height="512"
+              >
+              <img
+                class="compare__image slider__image slider__image--state_before"
+                src="https://firefoxic.github.io/images/cat-energy/slider/cat-fat-mobile@1x.png"
+                srcset="https://firefoxic.github.io/images/cat-energy/slider/cat-fat-mobile@2x.png 2x"
+                width="280"
+                height="256"
+                alt="До этого Борис был толстым."
+              >
+            </picture>
+            <div class="slider__curtain">
+              <button class="slider__thumb" type="button">
+                <span class="page__hidden">Ползунок слайдера</span>
+              </button>
+            </div>
+            <picture>
+              <source
+                type="image/avif"
+                media="(min-width: 768px)"
+                srcset="
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-thin-tablet@1x.avif 1x,
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-thin-tablet@2x.avif 2x"
+              >
+              <source
+                type="image/avif"
+                srcset="
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-thin-mobile@1x.avif 1x,
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-thin-mobile@2x.avif 2x"
+              >
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-thin-tablet@1x.webp 1x,
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-thin-tablet@2x.webp 2x"
+              >
+              <source
+                type="image/webp"
+                srcset="
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-thin-mobile@1x.webp 1x,
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-thin-mobile@2x.webp 2x"
+              >
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-thin-tablet@1x.png 1x,
+                  https://firefoxic.github.io/images/cat-energy/slider/cat-thin-tablet@2x.png 2x"
+              >
+              <img
+                class="compare__image slider__image slider__image--state_after"
+                src="https://firefoxic.github.io/images/cat-energy/slider/cat-thin-mobile@1x.png"
+                srcset="https://firefoxic.github.io/images/cat-energy/slider/cat-thin-mobile@2x.png 2x"
+                width="280"
+                height="256"
+                alt="Теперь Борис стройняшка."
+              >
+            </picture>
+          </div>
+        </figure>
+      </section>
+    </main>
+    <section class="bg-light py-3 py-md-5">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+            <h2 class="mb-4 display-5 text-center">Contact</h2>
+            <p class="text-secondary mb-5 text-center">The best way to contact us is to use our contact form below. Please fill out all of the required fields and we will get back to you as soon as possible.</p>
+            <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="row justify-content-lg-center">
+          <div class="col-12 col-lg-9">
+            <div class="bg-white border rounded shadow-sm overflow-hidden">
+    
+              <form action="#!">
+                <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                  <div class="col-12">
+                    <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                      </span>
+                      <input type="email" class="form-control" id="email" name="email" value="" required>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                      </span>
+                      <input type="tel" class="form-control" id="phone" name="phone" value="">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-grid">
+                      <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="motto"> Il mio approccio è simile a quello di un sarto che crea un vestito su misura per il suo cliente. </div>
+  <div id="footer">
+    Footer
+  </div>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
