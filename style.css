@@ -182,21 +182,21 @@ body {
     border-left: 10px solid darkslategray;
 }
 .slide-1 .slide-bg{
-    background-color: cadetblue;
+    background-color: rgb(18, 21, 31);
 }
 
 .slide-2 .slide-text {
     border-left: 10px solid burlywood;
 }
 .slide-2 .slide-bg{
-    background-color: antiquewhite;
+    background-color:rgb(18, 21, 31);
 }
 
 .slide-3 .slide-text {
     border-left: 10px solid darkslateblue;
 }
 .slide-3 .slide-bg{
-    background-color: deepskyblue;
+    background-color: rgb(18, 21, 31);
 }
 
 .slider-controls {
